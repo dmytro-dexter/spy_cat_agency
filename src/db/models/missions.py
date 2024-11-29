@@ -10,6 +10,6 @@ class Mission(Base):
 
     id = Column(UUID(as_uuid=True), unique=True, primary_key=True, default=uuid4)
     info = Column(Text, nullable=False)
-    assignee_id = Column(Integer, ForeignKey("agents_cats.id"))
-    assignee = relationship("SpyCatAgency", back_populates="mission")
-    targets = relationship("Target", back_populates="mission_reference")
+    # assignee_id = Column(Integer, ForeignKey("agents_cats.id"))
+    # assignee = relationship("SpyCatAgency", back_populates="mission")
+    # targets = relationship("Target", back_populates="mission_reference")
