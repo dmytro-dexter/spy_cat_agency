@@ -13,5 +13,5 @@ class SpyCatAgency(Base):
     years_of_experience = Column(Integer, nullable=False)
     # breed = relationship("Breed", back_populates="cat")
     salary = Column(Integer, nullable=False)
-    # mission = relationship("Mission", back_populates="assignee")
+    mission = relationship("Mission", back_populates="assignee")
     is_available = Column(Boolean)
